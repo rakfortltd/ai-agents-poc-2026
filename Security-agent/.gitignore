@@ -1,0 +1,20 @@
+# Virtual environments
+venv/
+env/
+.venv/
+venvmcp/
+__pycache__/
+.env
+
+# Cache
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Keys and Secrets
+*.key
+*.pem
+secrets.json
+credentials.json
