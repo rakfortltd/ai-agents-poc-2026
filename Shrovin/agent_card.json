@@ -1,0 +1,58 @@
+{
+  "name": "Travel Planner Agent",
+  "version": "1.0.0",
+  "description": "A multi-agent travel planner that creates complete trip plans including flights, hotels and budget estimates.",
+  "url": "https://us-central1-aiplatform.googleapis.com/v1/projects/247920035196/locations/us-central1/reasoningEngines/5475681156022140928",
+  "provider": {
+    "organization": "Rakfort",
+    "url": "https://cloud.google.com/vertex-ai"
+  },
+  "capabilities": {
+    "streaming": true,
+    "multiAgent": true
+  },
+  "skills": [
+    {
+      "id": "flight_search",
+      "name": "Flight Search",
+      "description": "Searches and suggests flight routes with estimated prices",
+      "examples": [
+        "Find flights from Dublin to Goa",
+        "What are the cheapest flights to Goa in August?"
+      ]
+    },
+    {
+      "id": "hotel_search",
+      "name": "Hotel Search",
+      "description": "Suggests hotels based on location and budget",
+      "examples": [
+        "Find budget hotels in Goa",
+        "What are the best hotels in Calangute?"
+      ]
+    },
+    {
+      "id": "travel_planning",
+      "name": "Travel Planning",
+      "description": "Creates complete travel plans with flights, hotels and budget summary",
+      "examples": [
+        "Plan a 2-day trip to Goa for 2 adults",
+        "Create a budget travel plan for Goa"
+      ]
+    },
+    {
+      "id": "security_validation",
+      "name": "Security Validation",
+      "description": "Validates and sanitizes all inputs to prevent prompt injection attacks",
+      "examples": []
+    }
+  ],
+  "authentication": {
+    "type": "service_account",
+    "provider": "google_cloud"
+  },
+  "model": "gemini-2.5-flash",
+  "framework": "Google ADK",
+  "platform": "Vertex AI Agent Engine",
+  "project": "adk-agents-488317",
+  "location": "us-central1"
+}
