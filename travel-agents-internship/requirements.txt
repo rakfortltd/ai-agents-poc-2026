@@ -1,0 +1,21 @@
+python-dotenv==1.0.1
+
+langchain==1.2.6
+langchain-core==1.2.7
+
+# Vertex AI Gemini via LangChain
+langchain-google-vertexai==3.2.0
+
+# LangChain MCP client adapters (for MultiServerMCPClient)
+langchain-mcp-adapters==0.2.1
+
+# for optional http calls in tools or ASGI test client
+httpx>=0.28.0,<1.0.0
+fastapi==0.115.0
+
+google-cloud-aiplatform
+google-adk
+google-adk[a2a]
+requests
+llm-guard
+uvicorn
